@@ -1,12 +1,11 @@
-<table class="table">
+<table  class="table">
   <thead>
     <tr>
       <th>Brand Name</th>
     </tr>
   </thead>
-  <tbody>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+  <tbody *ngFor="let Brnad of Brands">
+      <td>{{Brnad.brandName}}</td>
+    
   </tbody>
 </table>

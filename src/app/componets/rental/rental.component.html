@@ -1,12 +1,12 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Brand Name</th>
+      <th>Rent Date </th>
+      <th>Return Date</th>
     </tr>
   </thead>
-  <tbody>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+  <tbody *ngFor="let Rental of Rentals">
+      <td>{{Rental.rentDate}}</td>
+      <td>{{Rental.returnDate}}</td>
   </tbody>
 </table>

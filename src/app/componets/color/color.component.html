@@ -1,12 +1,11 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Brand Name</th>
+      <th>Color Name</th>
     </tr>
   </thead>
-  <tbody>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+  <tbody *ngFor="let Color of Colors">
+      <td>{{Color.colorName}}</td>
+
   </tbody>
 </table>

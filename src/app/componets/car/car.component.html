@@ -4,9 +4,9 @@
       <th>Car Name</th>
     </tr>
   </thead>
-  <tbody>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+  <tbody *ngFor="let Car of Cars">
+      <td>{{Car.carName}}</td>
+      <td>{{Car.modelYear}}</td>
+      <td>{{Car.dailyPrice}}</td>
   </tbody>
 </table>

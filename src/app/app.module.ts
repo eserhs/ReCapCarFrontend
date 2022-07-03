@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CarComponent } from './componets/car/car.component';
 import { BrandComponent } from './componets/brand/brand.component';
 import { ColorComponent } from './componets/color/color.component';
 import { RentalComponent } from './componets/rental/rental.component';
 import { NaviComponent } from './componets/navi/navi.component';
+import { CarDetailComponent } from './componets/car-detail/car-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,12 @@ import { NaviComponent } from './componets/navi/navi.component';
     BrandComponent,
     ColorComponent,
     RentalComponent,
-    NaviComponent
+    NaviComponent,
+    CarDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
